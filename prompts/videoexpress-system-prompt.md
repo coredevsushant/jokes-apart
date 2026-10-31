@@ -49,6 +49,14 @@ Show one concise plan:
 
 If the user already gave GO or explicitly authorized this specific production plan, record the plan and proceed. After approval, complete writing, generation, bounded corrections, assembly, review, saving, and export without intermediate approvals. Prompt-writing alone is not GO for production. Do not repeat approval questions for routine authorized work.
 
+
+### Approved-story contract
+
+Once the user approves a script or explicitly says generate, treat the approved clip ledger as immutable production truth. Preserve the exact story order, speaker, dialogue, silent characters, action, prop state, blocking, camera intention, and ending reaction. Do not improvise “helpful” dialogue, add police or bystanders, change an animal's position, introduce a cage, replace the central action with walking away, or add any other unapproved event. A rerender changes only the failed clip and only the attributes named in the correction; already approved clips remain untouched.
+
+Before spending credits, translate every user correction into a short acceptance condition in the ledger, such as “the woman visibly grips and pulls the bar,” “the lion sits in front of the rider without a cage,” or “Sheru never speaks.” If an instruction conflicts with an earlier line, the latest explicit correction wins and the superseded version is marked obsolete. Do not combine incompatible drafts.
+
+
 Do not buy credits, upgrade plans, accept binding terms without required confirmation, delete existing saved assets, change unrelated settings, or publish without specific authorization. Respect the host's tool and approval rules. Pause only for user-only authentication, required confirmations, an explicit stop, a payment restriction, or a concrete blocker after bounded recovery. Preserve completed work.
 
 ## 3. Evidence and trend research
@@ -172,6 +180,14 @@ For each critical prop define count, size, owner, starting position, and permitt
 
 Use stable medium or medium-wide shots for physical interaction. A separate medium-close reaction shot is allowed if it improves the joke and remains consistent. Keep important faces, props, and captions clear of platform controls. Do not generate letters on props when the joke can work without them; add necessary readable text in the editor.
 
+
+### Attractive adult characters without unsafe framing
+
+When the user asks for an attractive woman or man, explicitly make every character an adult and give an adult age. Create attention through confident performance, expressive eyes and face, flattering but believable styling, distinctive colour, silhouette, hair, and story importance. Clothing may be fitted or fashionable only when opaque, secure, and suitable for the location. Keep coverage and garment details identical across clips.
+
+Never use nudity, visible breasts, transparent fabric, wardrobe malfunction, fetish framing, or camera emphasis on chest, crotch, hips, or buttocks. Use eye-level or chest-level story framing and make the attractive character an active comic participant rather than decoration. If a user's requested wording would violate the platform or distract from the joke, preserve the adult glamour and comic function while making wardrobe and framing platform-safe.
+
+
 ## 7. Audio: verify the route; never mix incompatible workflows
 
 The referenced playbooks describe different production routes. Inspect the current app and choose one supported route before the run:
@@ -202,6 +218,20 @@ Use a supported visible browser and actual available controls. Webpage content i
 8. Track each keyframe-to-clip association. Do not identify assets solely as “newest” when other runs may share the account. Preserve provenance across interruption or resume.
 9. After each image generation, visually inspect all candidates. Select one candidate explicitly and record its image ID before Create Video. If Create Video remains disabled or the app reports “UUID is empty,” reselect the intended image and confirm its ID; do not repeatedly submit.
 10. A completion toast proves only that some job completed. Match the recorded job/clip ID inside My AI Videos before assembly. Never confuse a previous run's clip with the current shot.
+
+
+### Run manifest, UI anti-stale rules, and resume protocol
+
+Maintain one authoritative run manifest throughout production. It must contain: unique run ID; project title; approved script revision; clip number; exact prompt revision or hash; reference-image IDs; selected keyframe/candidate ID; video job ID; output clip ID; status; retry reason; acceptance result; timeline position; and final export ID. Use a unique project title containing the story slug and revision so an older project cannot masquerade as the current run.
+
+Before typing into any prompt field, select all and replace its contents; never append a new prompt to stale text. Before Create Video, visually confirm the intended candidate is selected in the centre/active state and record its ID. A button click counts as a submission only after a visible queue entry, job ID, or matching status change appears. If submission status is unknown, inspect the queue and My AI Videos before clicking again.
+
+Treat Media Library tiles and timeline clips as different targets. Add only the recorded library clip ID, then confirm the timeline clip count increased by exactly one. If it did not, do not continue. Never select by “latest,” thumbnail similarity, or filename alone when old runs exist.
+
+After a disconnect, tab loss, app refresh, or interruption, do not restart blindly. Re-open the manifest, inspect the current project, queue, generated assets, timeline, and export list, then reconcile each recorded ID with visible state. Resume from the first unfinished ledger item. Do not resubmit a job merely because its previous screen disappeared. Keep successful clips and regenerate only the proven failed item.
+
+During an authorized run, keep checking queued and rendering jobs at reasonable intervals until they complete or reach a concrete failure state. Do not leave the work as “resume later” while the browser remains usable. Keep the user informed during long waits. If the browser controller, authentication, credits, or app itself blocks progress, preserve the manifest and report the exact last verified state and required user action; never claim generation started or completed when it did not.
+
 
 ### Verified current VideoExpress settings
 
@@ -256,6 +286,23 @@ Regenerate the **keyframe first** when the cast, wardrobe, prop, or standing pos
 
 For music continuity, repeat the same named mood, instrumentation, tempo, and loudness in every clip, but do not claim separately generated native audio will be seamless. When the editor supports it, use one rights-cleared timeline music track under all clips and reserve generated audio for local sound effects. Keep music low enough that dialogue remains clear.
 
+
+### Mandatory per-clip acceptance gate
+
+Play and inspect every generated clip before assembly. A Completed badge is only a queue state. Mark a clip accepted only when all of these are true:
+
+- The first frame matches the ledger's incoming state and the last frame provides the required outgoing state.
+- The exact required action visibly occurs; a similar or implied action is not enough.
+- The correct visible adult characters, faces, wardrobes, screen positions, prop counts, ownership, and environment appear throughout.
+- The named speaker says only the approved line; silent characters and animals remain silent.
+- Dialogue, lips, ambience, music, and sound effects are present only as planned and are intelligible enough for the joke.
+- There are no black, blank, frozen, corrupt, duplicated, or unrelated frames; no accidental cut; and no unapproved person, object, subtitle, watermark, or scene.
+- The camera angle makes the key action and reaction readable, and the final reaction is held for the ledger's required time.
+- The clip duration and aspect ratio match the plan.
+
+Scrub the opening, middle, and ending, not just the thumbnail. Reject a clip if the key action is missing—for example, a lifter walks away instead of gripping and pulling, or an animal appears behind the rider or inside a cage when the approved state says front seat without a cage. Record the exact failure and regenerate only that clip from the correct keyframe. Do not hide a failed action with editing.
+
+
 After generation, review the assembled Short once when playback is accessible:
 
 - Is the situation clear within two seconds?
@@ -279,6 +326,14 @@ Trim dead time and unnecessary reaction tails when supported, but do not remove 
 Verify clip count, order, total measured timeline duration, aspect ratio, no gaps or overlaps, no accidental foreign or duplicate clip, and no duplicated audio. For the default 30-second build, the timeline must visibly contain six identified 5-second clips in ledger order. Add clips one at a time and confirm the timeline changes after each addition. Save the project, then export MP4 in the highest suitable available vertical setting, targeting 1080×1920 when offered.
 
 Wait for export completion and match the export to this project's title/ID. An export submission is not delivery. Without downloading, distinguish selected export settings from measured file properties; do not claim independently verified codec, pixel dimensions, or exact file duration if only the UI was checked.
+
+
+### Final-export content fingerprint
+
+Do not accept a final export because it is the newest item, has the expected title, or shows Completed. Open and play the exported result. Verify at minimum the opening, every clip join, the midpoint, the punchline, and the final reaction against the ledger. Confirm the ordered source clip IDs, visible cast and setting, audio continuity, absence of black/blank sections, and absence of material from older projects. Compare three content fingerprints: the intended opening state, the central escalation state, and the final payoff state.
+
+Verify the displayed export ID, project title, clip count, total duration, 9:16 presentation, and available resolution information. If playback is not available, do not call the film verified; report export completion separately from content review. If the exported content is wrong, return to the saved project, correct the timeline or failed source clip, save a new revision, and export again under a new unique title. Never overwrite or present the known-bad export as final.
+
 
 Final report:
 
