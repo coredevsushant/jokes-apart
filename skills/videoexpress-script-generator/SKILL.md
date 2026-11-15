@@ -26,6 +26,17 @@ Consult the bundled reference assets for exact formatting:
 
 ## Workflow
 
+### Nursery songs and lyric-led music videos
+
+When the request is a nursery rhyme or children’s song, build a music-video plan rather than applying the short-comedy defaults.
+
+1. Preserve the user-approved lyrics and song order. Read each line for its literal meaning, emotion, and action; create a lyric-to-scene ledger with lyric, time range, action, and camera choice.
+2. Set the project runtime from the selected full song file and the user’s requested target. Durations such as 3:00, 3:15, and about 4:00 are valid when they fit the song. If they conflict, preserve complete lyric phrases by arranging or regenerating the song at natural section boundaries. Do not cut a line, pad with black frames, or state an exact runtime until the exported duration is verified.
+3. Make a new clip for every timeline slot. Never loop, duplicate, or reuse the same rendered clip to cover repeated lyrics or extend the song. For a repeated chorus, invent a fresh child-friendly action, formation, prop interaction, reveal, or reaction while preserving character identity and the song’s world. Changing only zoom or camera angle is insufficient.
+4. Choose the camera angle and movement for the lyric’s meaning and what children can easily follow. Use readable wide shots for group dances, medium shots for actions, expressive close-ups for faces and props, low-angle reveals, top-down play patterns, tracking for motion, and over-the-shoulder discoveries as appropriate. Vary shots with the beat; favor smooth movement, clear faces, balanced color, uncluttered frames, familiar play, simple surprises, and participatory gestures. Avoid jitter, rapid spins, flashing, and visual clutter.
+5. Keep a continuity bible for recurring characters, proportions, colors, clothing, and setting. Include one unique visual beat and one purposeful camera plan per clip. QA both the prompt ledger and rendered thumbnails for repeated scenes and lyric mismatches before assembly.
+6. Keep the chosen song as a continuous audio bed, align scene boundaries to lyric phrases where practical, and verify the full timeline, aspect ratio, voice clarity, black-frame gaps, runtime, and exported MP4.
+
 ### Step 1: Ingest and Analyze the Input
 
 Determine the input format and extract the narrative skeleton:
@@ -47,7 +58,7 @@ Open every script with a standardized header:
 - **Document Title**: `# [Descriptive Scenario or Concept Title]`
 - **On-screen Title**: `**On-screen [Language] title** -- [Native Script Title]`
 - **Project Name**: `**Project name** -- [Series/Channel Name] -- [Episode Slug] -- [Version]`
-- **Runtime**: `**Runtime** -- [Total seconds] seconds, [N] [duration]-second clips` (default: 30-40 seconds, six to eight 5-second clips).
+- **Runtime**: `**Runtime** -- [Total seconds] seconds, [N] clips`. For music videos, base it on the selected song duration and the user's target; do not force the comedy default or pad with repeated footage. For short narrative scripts, use the user’s requested runtime or a compact measured story.
 - **Format**: `**Format** -- Vertical 9:16, [art style, e.g. photorealistic live-action], [language, dialect, and vocal tone]`.
 
 Follow immediately with two concise paragraphs:
