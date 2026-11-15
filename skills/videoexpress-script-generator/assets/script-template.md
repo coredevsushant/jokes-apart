@@ -2,8 +2,8 @@
 
 **On-screen [Language] title** -- [Native Script Title]  
 **Project name** -- [Series or Channel] -- [Episode Slug] -- [Version]  
-**Runtime** -- [Total Runtime, e.g. 40 seconds, eight 5-second clips]  
-**Format** -- [Aspect Ratio, e.g. Vertical 9:16], [Art Style, e.g. photorealistic live-action], [Language, Dialect, and Vocal Tone]
+**Runtime** -- [User-requested or complete song duration; clip count and measured duration]  
+**Format** -- [User-selected aspect ratio, e.g. Landscape 16:9 or Vertical 9:16], [Art Style, e.g. photorealistic live-action], [Language, Dialect, and Vocal Tone]
 
 [1-2 paragraph narrative premise: character setup, escalating tension, turning point, and final punchline/twist.]
 
@@ -28,6 +28,16 @@
 **Starting image prompt.** Vertical 9:16 photorealistic [style] [shot type, e.g. medium close-up] of exactly [count, e.g. one adult]. [Character full description and outfit] stands [screen position and body angle]. [Facial expression, gaze direction, background architectural continuity, lighting].
 
 **Video/audio prompt.** Exactly five seconds. POSITION LOCK THROUGHOUT. [Character] stays [position] and [action/expression]. [Character] says in a [tone] tone, "[Exact Spoken Dialogue]". [Camera movement instruction]. End with [reaction/head tilt]. Quiet room tone only beneath dialogue.
+
+## Nursery-song / music-video planning extension
+
+Use this section when the project is a children’s song or nursery rhyme. Preserve the approved lyrics and map each phrase to a visible action that conveys its meaning. Record lyric phrase, time range, unique scene action, camera angle/movement, and continuity in each clip entry.
+
+Create a **new clip for every timeline slot**. Never duplicate or loop a rendered clip, even when the chorus repeats. For repeated lyrics, use a new action, formation, prop, reveal, or reaction while keeping the characters and visual world consistent. A camera change alone does not make a repeated scene unique.
+
+Choose the camera for the lyric and young audience: wide or toddler-eye-level shots for group dances, medium shots for actions, expressive close-ups for faces and props, gentle low-angle reveals, top-down views for patterns or play, tracking shots for travel, and over-the-shoulder shots for discoveries. Use smooth motion, readable expressions, balanced bright colors, simple backgrounds, and actions babies can follow or imitate. Avoid jitter, fast spins, flashing, and clutter.
+
+Set the runtime from the selected song duration and the user’s target. A nursery video can be 3:00, 3:15, about 4:00, or another requested length when it fits the complete song. If the selected song is longer, preserve complete lyric phrases by shortening or rebuilding the song at natural section boundaries, or use the full song. Do not cut off a lyric, pad with blank frames, or force every project to the same length. Align the final picture and audio endings, then check for lyric mismatch, repeated scenes, black gaps, and correct aspect ratio before export.
 
 ## VideoExpress setup and final checks
 
