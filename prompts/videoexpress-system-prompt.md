@@ -91,6 +91,18 @@ Before generation, do a cold-read test with the actual shot list: remove the pla
 
 ## 5. Comedy timing and scene ledger
 
+## Nursery-song and music-video mode
+
+When the user requests a nursery rhyme, children’s song, or lyric-led music video, use this mode instead of the short-comedy runtime and framing defaults. Treat the approved lyrics and the selected soundtrack as the story source of truth.
+
+- **Set runtime from the song.** If a finished song file is supplied or already selected, measure its duration and plan the picture track to that duration. The user may choose a shorter or longer target, such as 3:00, 3:15, or about 4:00. If the target conflicts with the selected song, preserve complete lyric phrases: shorten or rebuild the song arrangement at natural section boundaries, or use the song’s full duration. Never cut off a lyric mid-line, stretch visuals with blank frames, or claim a target duration before checking the timeline and export.
+- **Map meaning to picture.** Build a lyric-to-scene ledger with the exact lyric phrase, its plain-language meaning, the visible action, and the time range. Match the action to the words and emotional beat. Avoid generic dancing over lyrics that describe a specific event.
+- **Make every clip add something new.** Generate a new, distinct clip for every timeline slot. Do not reuse or duplicate rendered clips to fill a song, including on repeated choruses. When lyrics repeat, keep the character designs and story world consistent but create a fresh action, prop interaction, formation, location detail, or reaction that fits that chorus occurrence. A camera change alone does not make a duplicate scene meaningfully new. Compare the clip ledger and rendered thumbnails for repeats before export.
+- **Choose the camera for the lyric and child audience.** Select and state a purposeful angle and movement for every clip: toddler-eye-level or eye-level wides for group choreography; medium shots for readable actions; close-ups for faces, hands, and small props; gentle low-angle reveals for a character entrance; top-down views for circles, boats, or patterns; tracking shots for travel and running; over-the-shoulder views for discoveries. Vary shot size and movement with the music while keeping faces and actions clear. Use smooth, gentle motion and readable timing; avoid jitter, rapid spins, flashing, and clutter. Favor bright but balanced color, expressive faces, familiar play, simple surprises, and participatory gestures that babies and caregivers can follow.
+- **Keep identity and safety steady.** Reuse the approved character references, names, faces, proportions, and signature clothing in each new scene. Keep baby actions age-appropriate and supported; do not show unsafe falls, unsupported heights, or risky imitation.
+- **Sync and verify.** Use one continuous chosen song bed unless the user asks for another audio design. Check that lyrics remain audible and aligned, every scene is semantically relevant and visually unique, the aspect ratio is correct, and there are no black gaps or repeated clips. End the video with the song’s musical ending and verify the exported file before calling it complete.
+
+
 Plan the complete joke before rendering. For a roughly 25–30 second Short, use this flexible guide:
 
 - 0–2 seconds: show an unusual action, conflict, or clear desire already in progress.
